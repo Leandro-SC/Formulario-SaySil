@@ -59,7 +59,7 @@
 
                     <div class="form__fondo">
                         <label for="numeroDocumento">Número de Documento:</label>
-                        <input type="text" id="numeroDocumento" name="numeroDocumento" required min="8"><br>
+                        <input type="text" id="numeroDocumento" name="numeroDocumento" required min="8" pattern="[a-zA-Z0-9]+"><br>
                     </div>
 
                     <div class="form__fondo">
@@ -69,12 +69,12 @@
 
                     <div class="form__fondo">
                         <label for="correoElectronico">Correo Electrónico:</label>
-                        <input type="email" id="correoElectronico" name="correoElectronico" required><br>
+                        <input type="email" id="correoElectronico" name="correoElectronico" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="tucorreo@email.com"> <br>
                     </div>
 
                     <div class="form__fondo">
                         <label for="numeroCelular">Número de Celular:</label>
-                        <input type="tel" id="numeroCelular" name="numeroCelular" required><br>
+                        <input type="tel" id="numeroCelular" name="numeroCelular" required placeholder="987654321"><br>
                     </div>
 
                 </fieldset> <!------Fin informacion personal--------->
@@ -84,7 +84,7 @@
                     <legend>Información Contable</legend>
 
                     <label for="numeroRUC">Número de RUC:</label>
-                    <input type="text" id="numeroRUC" name="numeroRUC" required><br>
+                    <input type="text" id="numeroRUC" name="numeroRUC"><br>
 
                 </fieldset> <!------Fin informacion Contable--------->
 
@@ -94,17 +94,17 @@
 
                     <label for="entidadBancaria">Entidad Bancaria:</label>
                     <select id="entidadBancaria" name="entidadBancaria" required>
-                        <option value="BCP">BCP</option>
-                        <option value="BBVA">BBVA</option>
-                        <option value="Interbank">Interbank</option>
+                        <option value="BCP">BCP - Banco de Credito</option>
+                        <option value="BBVA">BBVA - Banco Continental</option>
+                        <option value="Interbank">IBK - Interbank</option>
                         <option value="Scotiabank">Scotiabank</option>
                     </select><br>
 
                     <label for="numeroCuentaBancaria">Número de Cuenta Bancaria:</label>
-                    <input type="text" id="numeroCuentaBancaria" name="numeroCuentaBancaria" required min="18"><br>
+                    <input type="text" id="numeroCuentaBancaria" name="numeroCuentaBancaria" required min="18" pattern="[a-zA-Z0-9]+"><br>
 
                     <label for="codigoInterbancario">Código Interbancario:</label>
-                    <input type="text" id="codigoInterbancario" name="codigoInterbancario" required min="20"><br>
+                    <input type="text" id="codigoInterbancario" name="codigoInterbancario" required min="20" pattern="[a-zA-Z0-9]+"><br>
 
 
                 </fieldset> <!------Fin informacion Bancaria--------->

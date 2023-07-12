@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Bienvenido a <em>Grupo SaySil</em></h1>
+    </header>
+
+    <section class="imagen">
+        <img src="./img/logo.png" alt="logo">
+    </section>
+
+    <div class="contenedor">
+        <section>
+            <form id="myForm" class="formulario">
+
+                <fieldset>
+
+                    <legend>Información Personal</legend>
+
+                    <div class="form__fondo">
+
+                        <label for="apellidoPaterno">Apellido Paterno:</label>
+                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" required><br>
+
+                    </div>
+
+                    <div class="form__fondo">
+                        <label for="apellidoMaterno">Apellido Materno:</label>
+                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" required><br>
+                    </div>
+                    <div class="form__fondo">
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" id="nombres" name="nombres" required><br>
+                    </div>
+
+                    <div class="form__fondo">
+                        <label for="tipoDocumento">Tipo de Documento:</label>
+                        <select id="tipoDocumento" name="tipoDocumento" required>
+                            <option value="dni">DNI</option>
+                            <option value="pasaporte">Pasaporte</option>
+                            <option value="carnetExtranjeria">Carnet de Extranjería</option>
+                        </select><br>
+                    </div>
+
+                    <div class="form__fondo">
+                        <label for="numeroDocumento">Número de Documento:</label>
+                        <input type="text" id="numeroDocumento" name="numeroDocumento" required min="8"><br>
+                    </div>
+
+                    <div class="form__fondo">
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+                    </div>
+
+                    <div class="form__fondo">
+                        <label for="correoElectronico">Correo Electrónico:</label>
+                        <input type="email" id="correoElectronico" name="correoElectronico" required><br>
+                    </div>
+
+                    <div class="form__fondo">
+                        <label for="numeroCelular">Número de Celular:</label>
+                        <input type="tel" id="numeroCelular" name="numeroCelular" required><br>
+                    </div>
+
+                </fieldset> <!------Fin informacion personal--------->
+
+                <fieldset>
+
+                    <legend>Información Contable</legend>
+
+                    <label for="numeroRUC">Número de RUC:</label>
+                    <input type="text" id="numeroRUC" name="numeroRUC" required><br>
+
+                </fieldset> <!------Fin informacion Contable--------->
+
+                <fieldset>
+
+                    <legend>Información Bancaria</legend>
+
+                    <label for="entidadBancaria">Entidad Bancaria:</label>
+                    <select id="entidadBancaria" name="entidadBancaria" required>
+                        <option value="BCP">BCP</option>
+                        <option value="BBVA">BBVA</option>
+                        <option value="Interbank">Interbank</option>
+                        <option value="Scotiabank">Scotiabank</option>
+                    </select><br>
+
+                    <label for="numeroCuentaBancaria">Número de Cuenta Bancaria:</label>
+                    <input type="text" id="numeroCuentaBancaria" name="numeroCuentaBancaria" required min="18"><br>
+
+                    <label for="codigoInterbancario">Código Interbancario:</label>
+                    <input type="text" id="codigoInterbancario" name="codigoInterbancario" required min="20"><br>
+
+
+                </fieldset> <!------Fin informacion Bancaria--------->
+
+
+                <input class="boton" type="submit" value="Enviar">
+            </form>
+
+
+        </section>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+
+
+</html>
